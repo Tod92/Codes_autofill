@@ -5,7 +5,7 @@ DOCX_TEMPLATE = "template.docx"
 DOCX_RESULT = "resultat.docx"
 XLS_CODES = 'codes.xls'
 CHARACTERS_TO_REPLACE = "aaaa-aaaa"
-NB_CODES = 8
+NB_CODES = 300
 
 def replace_first(previous,new,text):
     """
@@ -28,9 +28,6 @@ def code_generator(codes):
         print(str(codes[count]))
         yield str(codes[count])
         count += 1
-
-
-
 
 
 if __name__ == '__main__':
